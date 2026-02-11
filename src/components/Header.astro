@@ -1,0 +1,25 @@
+---
+interface Props {
+	title: string;
+}
+const { title } = Astro.props;
+---
+
+<h1>
+	<span class="text-gradient">{title}</span>
+</h1>
+
+<style>
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		background-position: 0%;
+		background-size: 400%;
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+	}
+</style>
