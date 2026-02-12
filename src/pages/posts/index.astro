@@ -1,11 +1,11 @@
 ---
+import Layout from "../../layouts/Layout.astro";
+import Card from "../../components/Card.astro";
+import Header from "../../components/Header.astro";
+import Hero from "../../components/Hero.astro";
 import { getCollection } from "astro:content";
-import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
-import Header from "../components/Header.astro";
-import Hero from "../components/Hero.astro";
 
-const allPosts = (await getCollection("tips")).sort(
+const posts = (await getCollection("tips")).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
 );
 ---
@@ -16,12 +16,12 @@ const allPosts = (await getCollection("tips")).sort(
 		<Hero />
 		<ul role="list" class="link-card-grid">
 			{
-				allPosts.map((item) => (
+				posts.map((post) => (
 					<Card
-						title={item.data.title}
-						time={item.data.pubDate}
-						tags={item.data.tags}
-						slug={item.id}
+						title={post.data.title}
+						time={post.data.pubDate}
+						tags={post.data.tags}
+						slug={post.id}
 					/>
 				))
 			}
@@ -32,14 +32,14 @@ const allPosts = (await getCollection("tips")).sort(
 <style>
 	main {
 		margin: auto;
-		max-width: 60ch;
 		padding: 1.5rem;
+		max-width: 60ch;
 	}
 
 	.link-card-grid {
 		display: grid;
-		gap: 1rem;
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
 		padding: 0;
 	}
 </style>
