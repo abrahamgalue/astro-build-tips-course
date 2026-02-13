@@ -13,12 +13,16 @@ import svelte from "@astrojs/svelte";
 
 import sitemap from "@astrojs/sitemap";
 
+import cloudflare from "@astrojs/cloudflare";
+
 // https://astro.build/config
 export default defineConfig({
-    site: "https://astro-build-tips-abrahamgalue.netlify.app",
-    vite: {
-        plugins: [tailwindcss()],
-    },
+	site: "https://astro-build-tips-abrahamgalue.pages.dev",
 
-    integrations: [mdx(), react(), vue(), svelte(), sitemap()],
+	vite: {
+		plugins: [tailwindcss()],
+	},
+
+	integrations: [mdx(), react(), vue(), svelte(), sitemap()],
+	adapter: cloudflare(),
 });
