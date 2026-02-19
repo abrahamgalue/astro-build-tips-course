@@ -17,7 +17,7 @@ import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://astro-build-tips-abrahamgalue.pages.dev",
+	site: "https://astro-build-tips-course.abrahamgalue.workers.dev/",
 
 	vite: {
 		plugins: [tailwindcss()],
