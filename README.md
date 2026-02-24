@@ -1,46 +1,68 @@
-# Astro Starter Kit: Basics
+<div align='center'>
 
-```sh
-pnpm create astro@latest -- --template basics
-```
+# 🚀 Astro: Build Tips Course
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+</div>
 
-## 🚀 Project Structure
+### Proyecto del curso de Astro: Build Tips.
 
-Inside of your Astro project, you'll see the following folders and files:
+> 🧩 Aquí puedes ver su [**Live Demo**](https://astro-build-tips-course.abrahamgalue.workers.dev/).
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+![vista-previa](public/preview/01-page-preview.jpg)
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+![vista-previa](public/preview/02-page-preview.jpg)
 
-## 🧞 Commands
+![vista-previa](public/preview/03-page-preview.jpg)
 
-All commands are run from the root of the project, from a terminal:
+## 🚀 Descripción
 
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `pnpm install`         | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+Este proyecto es el resultado del curso **Astro: Build Tips**, enfocado en aprender técnicas avanzadas y mejores prácticas para construir sitios web rápidos y eficientes con Astro.
 
-## 👀 Want to learn more?
+El proyecto incluye ejemplos del uso de múltiples frameworks de frontend como **React**, **Svelte** y **Vue** dentro de una misma aplicación Astro, además de integración con **MDX**, **Tailwind CSS** y despliegue en **Cloudflare Pages**.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## ⚡ Comenzar
+
+### Prerrequisitos
+
+1. Git.
+2. Node.js 20 o superior.
+3. pnpm (recomendado).
+
+## 🔧 Instalación
+
+### Usando pnpm
+
+1. **Clona el repositorio:**
+
+   ```bash
+   git clone https://github.com/abrahamgalue/astro-build-tips-course.git
+   cd astro-build-tips-course
+   ```
+
+2. **Instala las dependencias:**
+
+   ```bash
+   pnpm install
+   ```
+
+3. **Inicia el servidor de desarrollo:**
+
+   ```bash
+   pnpm dev
+   ```
+
+4. **Abre tu navegador y visita:**
+
+   ```bash
+   http://localhost:4321
+   ```
+
+## 🎭 Tecnologías
+
+- [**Astro**](https://astro.build/) Framework para sitios web orientados al contenido.
+- [**React**](https://react.dev/) Integración de componentes interactivos.
+- [**Svelte**](https://svelte.dev/) Integración de componentes ligeros.
+- [**Vue**](https://vuejs.org/) Integración de componentes dinámicos.
+- [**Tailwind CSS**](https://tailwindcss.com/) Estilizado moderno y rápido.
+- [**MDX**](https://mdxjs.com/) Uso de JSX en archivos Markdown.
+- [**Cloudflare**](https://www.cloudflare.com/) Despliegue y hosting.
